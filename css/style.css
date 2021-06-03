@@ -5,6 +5,37 @@
     box-sizing: border-box;
 }
 
-body{
-    
+@font-face {
+    font-family: 'Fira';
+    src: url('../fonts/FiraCode-VariableFont_wght.ttf')
+    format('truetype');
+    font-size: normal;
+    font-weight: normal;
+
+}
+
+/* header*/
+
+.nav-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    background-color: #7C5E99;
+    height: 50px;
+
+    font-size: 20px;
+    font-family: 'Fira';
+
+}
+
+.img-header{
+    margin-top: 10px;
+}
+
+.nav-items{
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 10px;
 }
