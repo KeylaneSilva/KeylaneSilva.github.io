@@ -8,7 +8,7 @@
 /*não funcional*/
 @font-face {
     font-family: 'Fira';
-    src: local('../fonts/FiraCode-VariableFont_wght.ttf')
+    src: local('../fonts/FiraCode-VariableFont_wght.ttf'),
     format('truetype');
     font-size: normal;
     font-weight: normal;
@@ -26,7 +26,7 @@
     height: 50px;
 
     font-size: 20px;
-    font-family: 'Fira';
+    font-family: 'Fira Code', monospace;
 
 }
 
@@ -50,6 +50,20 @@
 
 section{
     width: 10%;
+}
+
+.container, section{
+    height: 100%;
+}
+
+/*all section*/
+
+.titulo-main{
+    text-align: center;
+
+    font-family: 'Press Start 2P', cursive;
+    font-size: 40px;
+    color: #ffffff;
 }
 
 /* section intro */
@@ -82,7 +96,7 @@ section{
 /* section sobre */
 
 #sobre{
-    height: 700px;
+    height: 400px;
     width: 100%;
 
     background-color: #7C5E99;
