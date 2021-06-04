@@ -5,9 +5,10 @@
     box-sizing: border-box;
 }
 
+/*não funcional*/
 @font-face {
     font-family: 'Fira';
-    src: url('../fonts/FiraCode-VariableFont_wght.ttf')
+    src: local('../fonts/FiraCode-VariableFont_wght.ttf')
     format('truetype');
     font-size: normal;
     font-weight: normal;
@@ -31,11 +32,76 @@
 
 .img-header{
     margin-top: 10px;
+    margin-left: 10px;
 }
 
 .nav-items{
     display: flex;
     flex-direction: row;
 
+
+    margin-right: 25px;
     margin-top: 10px;
+}
+
+.nav-items div, button{
+    margin-right: 15px;
+}
+
+section{
+    width: 10%;
+}
+
+/* section intro */
+
+#intro{
+    height: 600px;
+    width: 100%;
+    top: 80px;
+    background-color: blueviolet;
+}
+
+/* section skills */
+
+#skills{
+    height: 700px;
+    width: 100%;
+
+    background-color: #ec657a;
+}
+
+/* section projetos */
+
+#projetos{
+    height: 400px;
+    width: 100%;
+
+    background-color: #000000;
+}
+
+/* section sobre */
+
+#sobre{
+    height: 700px;
+    width: 100%;
+
+    background-color: #7C5E99;
+}
+
+/* section contato */
+
+#contato{
+    height: 700px;
+    width: 100%;
+
+    background-color: #525151;
+}
+
+/* footer */
+
+footer{
+    height: 400px;
+    width: 100%;
+
+    background-color: #000000;
 }
