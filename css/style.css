@@ -23,7 +23,7 @@
     justify-content: space-between;
 
     background-color: #7C5E99;
-    height: 50px;
+    height: 75px;
 
     font-size: 20px;
     font-family: 'Fira Code', monospace;
@@ -41,20 +41,57 @@
 
 
     margin-right: 25px;
-    margin-top: 10px;
+    margin-top: 15px;
+
+    color: #ffffff;
+
+    cursor: pointer;
+    transition: .3s ease all;
+
+}
+
+.nav-items div{
+    margin-top: 8px;
 }
 
 .nav-items div, button{
-    margin-right: 15px;
+    margin-right: 20px;
+    
 }
 
-section{
-    width: 10%;
+.nav-items button{
+    background-color: #ec657a;
+    width: 170px;
+    height: 45px;
+    
+    border: 1px solid;
+    box-shadow: 3px 3px #a8a8a8;
+
+}
+
+.nav-items button a{
+    text-decoration: none;
+    color: #ffffff;
+    
 }
 
 .container, section{
     height: 100%;
 }
+
+.nav-items div:hover{
+    color: #ec657a;
+    font-size: 25px;
+}
+
+.nav-items button a:hover{
+    color: #ec657a;
+}
+
+.nav-items button:hover{
+    background-color: #ffffff;    
+}
+
 
 /*all section*/
 
