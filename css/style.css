@@ -92,6 +92,13 @@
     background-color: #ffffff;    
 }
 
+.nav-header img{
+    height: 60px;
+    width: 50px;
+
+    margin-top: -5px;
+}
+
 
 /*all section*/
 
