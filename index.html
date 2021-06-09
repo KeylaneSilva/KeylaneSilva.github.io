@@ -9,55 +9,100 @@
     
     <!--responsive-->
     <link rel="stylesheet" href="css/reponsive.css">
+
     <!--fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap" rel="stylesheet">
+    
+    <!--animation-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
     <title>Keylane Silva</title>
 </head>
 <body>
-    
-  <header>
+    <header>
       <div class="nav-header">
           <div class="img-header">
-              <img src="src/img/logo-header.png" alt="">
+              <!--<img src="src/img/logo-header.png" alt="">-->
+            </div>
+            <div class="nav-items">
+              <a href="#skills">Skills</a>
+              <a href="#projetos">Projetos</a>
+              <a href="#sobre">Sobre</a>
+              <a href="#contato">Contato</a>
+              <a id="buttonCv" href="./src/resumeUpKey-convertido_.pdf" download="CV KeylaneDev">Download CV</a>
+            </div>
           </div>
-          <div class="nav-items">
-              <div>Skills</div>
-              <div>Projetos</div>
-              <div>Sobre</div>
-              <div>Contatos</div>
-              <button><a href="./src/resumeUpKey-convertido_.pdf" download="CV KeylaneDev">Download CV</a></button>
-          </div>
-      </div>
-  </header>
-
+   </header>
+  
   <main>
-      <div class="wrapper">
-        <section id="intro">
-            <div class="titulo-main">Introdução</div>
-        </section>
-          <section id="skills">
-            <div class="titulo-main">Skills</div>
-          </section>
-          <section id="projetos">
-            <div class="titulo-main">Projetos</div>
-          </section>
-          <section id="sobre">
-            <div class="titulo-main">Sobre</div>
-          </section>
-          <section id="contato">
-            <div class="titulo-main">Contato</div>
-          </section>
-      </div>
-  </main>
+    <div class="wrapper">
+      <section id="intro">
+        <h2>Introdução</h2>
+      </section>
+      <section id="skills">
+        <h2>Skills</h2>
+      </section>
 
-  <footer id="footer">Rodapé</footer>
-</body>
+      <section id="projetos">
+        <h2 >Projetos</h2>
+        <div class="container-projetos">
+          <div class="cardPro">
+              <img class="img-projetos" src="img/cNetflix.png" alt="card projetos">
+                  <p class="p-projetos visivel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius architecto repellendus nisi harum, voluptatibus perferendis illo eaque maiores cumque beatae ipsa ipsam quasi itaque magni, doloremque quisquam, minima repellat delectus.</p>
+          </div>
+          <div class="cardPro">
+              <img class="img-projetos" src="img/cNetflix.png" alt="card projetos">
+                  <p class="p-projetos visivel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius architecto repellendus nisi harum, voluptatibus perferendis illo eaque maiores cumque beatae ipsa ipsam quasi itaque magni, doloremque quisquam, minima repellat delectus.</p>
+          </div>
+          <div class="cardPro">
+              <img class="img-projetos" src="img/cNetflix.png" alt="card projetos">
+                  <p class="p-projetos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius architecto repellendus nisi harum, voluptatibus perferendis illo eaque maiores cumque beatae ipsa ipsam quasi itaque magni, doloremque quisquam, minima repellat delectus.</p>
+          </div>
+          <div class="cardPro">
+              <img class="img-projetos" src="img/cNetflix.png" alt="card projetos">
+                  <p class="p-projetos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius architecto repellendus nisi harum, voluptatibus perferendis illo eaque maiores cumque beatae ipsa ipsam quasi itaque magni, doloremque quisquam, minima repellat delectus.</p>
+          </div>
+          <div class="cardPro">
+              <img class="img-projetos" src="img/cNetflix.png" alt="card projetos">
+                  <p class="p-projetos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius architecto repellendus nisi harum, voluptatibus perferendis illo eaque maiores cumque beatae ipsa ipsam quasi itaque magni, doloremque quisquam, minima repellat delectus.</p>
+          </div>
+          <div class="cardPro">
+              <img class="img-projetos" src="img/cNetflix.png" alt="card projetos">
+                  <p class="p-projetos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius architecto repellendus nisi harum, voluptatibus perferendis illo eaque maiores cumque beatae ipsa ipsam quasi itaque magni, doloremque quisquam, minima repellat delectus.</p>
+          </div>
+        </div>
 
-
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
-<script src="/js/bootstrap.js"></script>
-
-</html>
+      </section>
+      
+      <section id="sobre">
+        <h2 >Sobre</h2>
+      </section>
+      <section id="contato">
+        <h2 >Contato</h2>
+        
+        <div id="formulario">
+          <div class="form-items">      
+            <input type="text" name="nome" id="" placeholder="Nome">
+          </div>
+          <div class="form-items">   
+            <input type="email" name="email" id="" placeholder="Email">
+          </div>
+          <div class="form-items">      
+            <textarea name="" id="" cols="30" rows="10" placeholder="Mensagem"></textarea>
+          </div>
+          <button type="submit">Enviar</button>
+            </div>
+          </section>     
+        </div>
+      </main>
+      
+      <footer id="footer">Rodapé</footer>
+    </div>
+    </body>
+    
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    <script src="/js/bootstrap.js"></script>
+    
+    </html>
