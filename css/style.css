@@ -1,8 +1,18 @@
+/*Paleta de cores
+*
+*
+*
+*
+*/
+
+
+
 *{
     margin: 0;
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /*não funcional*/
@@ -11,22 +21,20 @@
     src: url('../fonts/FiraCode-VariableFont_wght.ttf');
     font-size: normal;
     font-weight: normal;
-
 }
 
 /* header*/
 
 .nav-header{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
+    align-items: center;
 
     background-color: #7C5E99;
     height: 75px;
 
-    font-size: 20px;
+    font-size: 20px;    
     font-family: 'Fira Code', monospace;
-
 }
 
 .img-header{
@@ -35,13 +43,8 @@
 }
 
 .nav-items{
-    display: flex;
-    flex-direction: row;
-
 
     margin-right: 25px;
-    margin-top: 15px;
-
     color: #ffffff;
 
     cursor: pointer;
@@ -56,12 +59,6 @@
     margin-right: 15px;
 }
 
-
-.nav-items div, button{
-    margin-right: 20px;
-    
-}
-
 .nav-items button{
     background-color: #ec657a;
     width: 170px;
@@ -72,19 +69,12 @@
 
 }
 
-.nav-items button a{
-    text-decoration: none;
-    color: #ffffff;
-    
-}
-
 .container, section{
     height: 100%;
 }
 
 .nav-items a:hover{
     color: #ec657a;
-    font-size: 23px;
     letter-spacing: 2px;
 
 }
@@ -93,55 +83,27 @@ a#buttonCv{
     border: 1px solid;
 
     padding: 10px;
-    margin-top: -7px;
+    margin-top: -12px;
 
-    height: 50px;
+    height: 42px;
 }
 
 a#buttonCv:hover{
     background-color: #ec657a;
-    letter-spacing: 0px;
     color: #ffffff;
-   
+    font-size:1em;
+    letter-spacing: .5px;
+    transition: .2s;
 }
 
 .nav-items button:hover{
     background-color: #ffffff;    
 }
 
-.nav-header img{
-    height: 60px;
-    width: 50px;
-
-    margin-top: -5px;
-}
-
 
 /*all section*/
 
-
-/* section intro */
-
-#intro{
-    height: 600px;
-    width: 100%;
-    top: 80px;
-    background-color: blueviolet;
-}
-
-/* section skills */
-
-#skills{
-    height: 700px;
-    width: 100%;
-
-    background-color: #ec657a;
-}
-
-
-h2{
-    
-
+h2{  
     text-shadow: 10px 5px 5px rgb(0, 0, 0);
 
     text-align: center;
@@ -152,70 +114,118 @@ h2{
     color: #ffffff;
 }
 
+/* section intro */
+
+section#intro{
+    flex-direction: row;
+    justify-content: space-around;
+    
+    height: 600px;
+    top: 80px;
+    background-color: blueviolet;
+}
+
+section img#icone{
+    width: 20%;
+    border-radius: 50%;
+    border: 1px solid;
+}
+
+section p#texto-intro{
+    color: white;
+    font-size: 180%;
+    margin-left: 40px;
+    text-align: right;
+    width: 50%;
+}
+
+/* section skills */
+
+section#skills{
+    height: 700px;
+    background-color: #ec657a;
+}
+
+
 /* section projetos */
 
-#projetos{
-    
-    width: 100vw;
-
-    
+section#projetos{
+    position: relative; 
     background-color: #000000;
 }
 
-.container-projetos{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
 
-    border: 2px solid #ffffff;
+/* style projetos*/
 
-    margin-top: 50px;
-    
-
-    width: 100%;
-
-}
-
-.cardPro img{
-    width: 100%;
-    
-    
-}
-
-.cardPro{
+div.banner{
+    border: 2px solid;
     width: 30%;
-    margin: 10px;
-
-    border: 2px solid #ffffff;
-
+    margin: 15px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
 }
 
-.cardPro:hover{
-    animation: pulse;
-    animation-duration: 2s;
+div.cardContainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    padding-bottom: 15px;
 }
 
-.cardPro p{
-    color: #ffffff;
-
-}
-
-.visivel{
+.popup{ 
     display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.829);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
 }
 
-.opacidade{
-    opacity: 0.4;
+.popup .img{
+    width: 100%;
+    width: 800px;
+    margin: 55px auto;
 }
 
+.popup p{
+    color: white;
+    font-size: 45px;
+    margin: 25px;
+}
+
+.popup a{
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px 25px;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    margin: 25px;
+}
+
+.popup a:hover{
+    transition: .4s;
+    filter:invert();
+}
+
+img{
+    border-radius: 5px;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
 
 /* section sobre */
 
 #sobre{
     height: 400px;
-    width: 100%;
-
     background-color: #7C5E99;
 }
 
@@ -223,33 +233,20 @@ h2{
 
 #contato{
     height: 700px;
-    width: 100%;
-
     background-color: #525151;
 }
 
 #formulario{
     display: flex;
     flex-direction: column;
-
-    margin-left: 20%;
-    margin-right: 20%;
-    
+    margin-top: 30px;
+    width: 35%; 
 }
 
-.form-items{
-    display: flex;
-    flex-direction: column;
-
-    margin-top: 20px;
-}
-
-#formulario button{
+#formulario input[type='submit']{
     width: 100%;
     padding: 7px;
     font-size: 1.4em;
-
-    margin-top: 2%;
 
     border: none;
     border-radius: 5px;
@@ -259,7 +256,7 @@ h2{
     background:linear-gradient(45deg, #ffffff, #000000);
 }
 
-#formulario button:hover{
+#formulario input[type='submit']:hover{
     background:linear-gradient(45deg, #000000, #ffffff);
 
     padding: 8px;
@@ -271,17 +268,33 @@ h2{
 
     resize: none;
 
-    padding: 5px;
+    padding: 10px;
     border: none;
     border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
 
+input::placeholder, textarea::placeholder{
+    font-size: 1.1em;
 }
 
 /* footer */
 
 footer{
-    height: 400px;
     width: 100%;
+    padding: 20px;
+    font-size: 1.5em;
+    text-align: center;
+    letter-spacing: 2px;
+    color: white;
+    background-color: #000000de;
+}
 
-    background-color: #000000;
+.flex-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding:40px;
 }
